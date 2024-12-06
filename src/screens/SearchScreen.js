@@ -3,9 +3,9 @@ import { View, Text, StyleSheet,ScrollView } from "react-native";
 import SearchBar from "../components/SearchBar";
 import useResults from '../hooks/useResults';
 import ResultList from "../components/ResultList";
-// import yelp from "../api/yelp";
 
-const SearchScreen = () => {
+
+const SearchScreen = ({navigation}) => {
   const [text, setText] = useState("");
   const [searchAPi,result,errmsg]=useResults();
 
@@ -16,7 +16,7 @@ const SearchScreen = () => {
   }
 
   return (
-    <View>
+    <>
       <SearchBar
         searchTerm={text}
         onSearchChange={(val) => setText(val)}
@@ -24,12 +24,12 @@ const SearchScreen = () => {
       />
       {errmsg ? <Text>{errmsg}</Text> : null}
       <ScrollView>
-      <Text>No of result {result.length}</Text>
+      
       <ResultList result={filterByCost('$')} title="Cost Efficetive" />
       <ResultList result={filterByCost('$$')} title="Bit Expensive" />
       <ResultList result={filterByCost('$$$')} title="Money Spender" />
       </ScrollView>
-    </View>
+    </>
   );
 };
 

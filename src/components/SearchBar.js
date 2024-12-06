@@ -27,9 +27,8 @@ const styles = StyleSheet.create({
     backgroundColor: "rgb(169,168,168)",
     borderRadius: 20,
     marginHorizontal: 10,
-    marginTop: 10,
     flexDirection: "row",
-    marginTop: 15,
+    marginVertical: 15,
   },
   iconStyle: {
     alignSelf: "center",

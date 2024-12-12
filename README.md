@@ -116,6 +116,10 @@ This project is licensed under the MIT License. Feel free to use and modify it f
 - **Yelp API**: For providing the business data.
 - **React Native Community**: For their extensive resources and support.
 
+## Business Search App Demo
+
+You can view the demo video for the Business Search App [here](https://drive.google.com/file/d/1PIL7GvIYhzvhHtzwGdmpzs3KwCfQbn6x/view).
+
 ---
 
 Happy coding! 😊
